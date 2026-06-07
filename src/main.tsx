@@ -5,11 +5,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import ComingSoon from './routes/ComingSoon/ComingSoon';
 import Home from './routes/Home';
+import NotFound from './routes/NotFound';
 
 const routes = createBrowserRouter([
   {
     path: "/", 
     element: <App />, 
+    errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> },
       {path: "/coming-soon", element: <ComingSoon />},
