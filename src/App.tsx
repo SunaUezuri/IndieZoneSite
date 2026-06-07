@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer/Footer";
 import styled from "styled-components";
 import { useKonamiCode } from "./hooks/useKonamiCode";
 import { SecretNotification } from "./components/SecretNotification/SecretNotification";
+import { useConsoleGreeting } from "./hooks/useConsoleGreeting";
 
 const AppLayout = styled.div`
     display: flex;
@@ -18,6 +19,7 @@ const MainContent = styled.main`
 
 export default function App(){
   const { showNotification } = useKonamiCode();
+  useConsoleGreeting();
 
   return(
     <AppLayout>
