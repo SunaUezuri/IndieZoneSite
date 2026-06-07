@@ -48,7 +48,7 @@ export function Footer() {
                         <li><Link to="/coming-soon">Termos de Uso</Link></li>
                         <li><Link to="/coming-soon">Privacidade</Link></li>
                         {/* Truque do mailto para o MVP */}
-                        <li><a href="mailto:contato@indiezone.com.br?subject=Reporte%20de%20Bug">Reportar Bug</a></li>
+                        <li><a href="mailto:bug.report@indiezone.com.br?subject=Reporte%20de%20Bug">Reportar Bug</a></li>
                     </ul>
                 </LinksSection>
 
@@ -71,6 +71,9 @@ export function Footer() {
                     </p>
                     <ul className="pixel-font">
                         <li>Nicolas Sena</li>
+                        <li>Nicoly Freitas</li>
+                        <li>Jacqueline Vivot</li>
+                        <li>Rafael Tinoco</li>
                     </ul>
                 </HallOfFame>
             </FooterBottom>

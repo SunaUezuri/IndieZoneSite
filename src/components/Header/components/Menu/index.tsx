@@ -19,8 +19,8 @@ export function Menu({ menuOpen, toggleMenu}: MenuProps) {
             <NavContainer $isOpen={menuOpen}>
                 <ul>
                     <li><Link to="/" onClick={toggleMenu}>Vitrine</Link></li>
-                    <li><Link to="/sobre" onClick={toggleMenu}>Sobre</Link></li>
-                    <li><Link to="/login" onClick={toggleMenu} className="pixel-font nav-button">
+                    <li><Link to="/coming-soon" onClick={toggleMenu}>Sobre</Link></li>
+                    <li><Link to="/coming-soon" onClick={toggleMenu} className="pixel-font nav-button">
                             Login
                         </Link></li>
                 </ul>
