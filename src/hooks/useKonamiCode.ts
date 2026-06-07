@@ -67,8 +67,7 @@ export function useKonamiCode() {
 
             if (isMatch) {
                 const body = document.body;
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                const isRetroActive = body.classList.toggle("retro-mode");
+                body.classList.toggle("retro-mode");
 
                 playRetroSound();
                 setShowNotification(true);
