@@ -9,6 +9,7 @@ import {
 } from "./Home.styles";
 import { GameCard } from "../../components/GameCard/GameCard";
 import { Loader } from "../../components/Loader/Loader";
+import { ServerError } from "../../components/ServerError/ServerError";
 
 export default function Home() {
     const { topRated, latest, heroBackground, loading, error } = useHomeData();
@@ -20,7 +21,7 @@ export default function Home() {
     }
 
     if (error) {
-        return <div style={{ padding: '5rem', textAlign: 'center', color: 'red' }}>Erro ao conectar com o servidor. A API está rodando?</div>;
+        return <ServerError message="Não foi possível conectar aos servidores da Indiezone." />
     }
 
     return (
