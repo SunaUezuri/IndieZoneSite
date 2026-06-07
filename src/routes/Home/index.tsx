@@ -8,6 +8,7 @@ import {
     GameGrid 
 } from "./Home.styles";
 import { GameCard } from "../../components/GameCard/GameCard";
+import { Loader } from "../../components/Loader/Loader";
 
 export default function Home() {
     const { topRated, latest, heroBackground, loading, error } = useHomeData();
@@ -15,7 +16,7 @@ export default function Home() {
     document.title = "Indiezone | O Santuário Indie";
 
     if (loading) {
-        return <div style={{ padding: '5rem', textAlign: 'center' }}>Carregando o Universo Indie...</div>;
+        return <Loader />;
     }
 
     if (error) {
