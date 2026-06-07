@@ -6,6 +6,7 @@ import App from './App';
 import ComingSoon from './routes/ComingSoon/ComingSoon';
 import Home from './routes/Home';
 import NotFound from './routes/NotFound';
+import Login from './routes/Login';
 
 const routes = createBrowserRouter([
   {
@@ -14,7 +15,8 @@ const routes = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> },
-      {path: "/coming-soon", element: <ComingSoon />},
+      { path: "/login", element: <Login /> },
+      { path: "/coming-soon", element: <ComingSoon /> },
     ]
       
   }
