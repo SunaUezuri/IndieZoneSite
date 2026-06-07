@@ -3,6 +3,8 @@ import { Outlet } from "react-router-dom";
 import { GlobalStyle } from "./style/global";
 import { Footer } from "./components/Footer/Footer";
 import styled from "styled-components";
+import { useKonamiCode } from "./hooks/useKonamiCode";
+import { SecretNotification } from "./components/SecretNotification/SecretNotification";
 
 const AppLayout = styled.div`
     display: flex;
@@ -15,10 +17,14 @@ const MainContent = styled.main`
 `;
 
 export default function App(){
+  const { showNotification } = useKonamiCode();
 
   return(
     <AppLayout>
       <GlobalStyle />
+
+      {showNotification && <SecretNotification />}
+
       <Header />
       <MainContent>
           <Outlet />
