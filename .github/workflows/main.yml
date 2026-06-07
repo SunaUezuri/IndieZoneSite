@@ -29,6 +29,7 @@ jobs:
       - name: Copiar arquivos para a VPS via SCP
         uses: appleboy/scp-action@v0.1.7
         with:
+        # Auth
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_PASSWORD }}
