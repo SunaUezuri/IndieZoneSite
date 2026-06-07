@@ -28,7 +28,7 @@ export function Footer() {
                         <a href="https://discord.com" target="_blank" rel="noreferrer" aria-label="Discord"><FaDiscord size={24} /></a>
                         <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter"><FaXTwitter size={24} /></a>
                         <a href="https://twitch.tv" target="_blank" rel="noreferrer" aria-label="Twitch"><FaTwitch size={24} /></a>
-                        <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub size={24} /></a>
+                        <a href="https://github.com/SunaUezuri/IndieZoneSite" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub size={24} /></a>
                     </SocialLinks>
                 </BrandSection>
 
@@ -70,12 +70,7 @@ export function Footer() {
                         Agradecimentos especiais aos heróis que ajudaram a testar e construir a Indiezone:
                     </p>
                     <ul className="pixel-font">
-                        <li>Alice "BugHunter"</li>
-                        <li>Carlos "The Dev"</li>
-                        <li>Marina "PixelArt"</li>
-                        <li>Beto "Speedrunner"</li>
-                        <li>Seu Nome Aqui</li>
-                        <li>Gemini (Copiloto IA)</li>
+                        <li>Nicolas Sena</li>
                     </ul>
                 </HallOfFame>
             </FooterBottom>
